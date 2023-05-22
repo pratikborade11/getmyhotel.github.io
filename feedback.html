@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Customer Feedback Form</title>
+    <style>
+      /* CSS styles for the page */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      form {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      input[type=text], textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+
+      input[type=submit] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type=submit]:hover {
+        background-color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Customer Feedback Form</h1>
+    </header>
+    <form role="form" method="post" action="https://script.google.com/macros/s/AKfycbyKy_9RlgdeA3DBtBSooyvlDRZPOstcErU1u5151PSW21WxvHogKOYkTFiJu3zXbpni/exec">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" required>
+
+      <label for="hotel-name">Hotel Name</label>
+      <input type="text" id="hotel-name" name="hotel-name" required>
+
+      <label for="rating">Rating (out of 5)</label>
+      <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments" rows="5" required></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
